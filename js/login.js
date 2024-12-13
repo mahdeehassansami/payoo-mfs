@@ -5,5 +5,12 @@ document.getElementById('button-login').addEventListener('click' , function(even
     console.log(phoneNumber)
     const password= document.getElementById('password').value;
     console.log(password)
+    if (phoneNumber==='5' && password==='1234'){
+        console.log('You are logged in ')
+        window.location.href = '/home.html';
+    }
+    else{
+        alert('wrong phone number or pin')
+    }
     
 })
